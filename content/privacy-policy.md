@@ -1,10 +1,10 @@
 ---
 title: Privacy Policy
-description: "The privacy policy"
+description: "The privacy policy of Brightest Days"
 layout: single
 bannerh1: "Privacy Policy"
-companyname: "Custom SoftwarePLUS" #Company Name Here
-companyemail: "info@netcomp.ca" #Company Name Here
+companyname: "Brightest Days Spray Foam Co." #Company Name Here
+companyemail: "info@brightestdays.ca" #Company Name Here
 ---
 
 Effective Date: May 5, 2020

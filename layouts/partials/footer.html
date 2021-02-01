@@ -4,30 +4,12 @@
 
     <div class="columns mt-6">
 
-    <div class="column is-3 is-flex is-justified-center is-aligned-center">
+    <div class="column is-6 is-flex is-justified-center is-aligned-center">
 
       <img src="{{ $.Site.BaseURL }}{{ .Site.Params.schema.logofooter }}"
                         alt="{{ .Site.Params.name }}"
                         class="lazyload footer_logo"      
                         />   
-    </div>
-
-    <div class="column is-3">
-      <h3 class="is-size-4 has-text-uppercase mb-2">{{ i18n "navigate" }}</h3>
-
-      <nav class="">
-       
-        <ul class="">
-          {{ range .Site.Menus.main -}}
-          
-          <li class="py-1 is-size-5"><a class="has-text-primary nav-item" href="{{ .URL }}">{{ .Name }}</a></li>
-          
-          {{ end }}
-
-        </ul>
-
-    </nav>
-
     </div>
 
     <div class="column is-3">
