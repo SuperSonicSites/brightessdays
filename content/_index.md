@@ -5,7 +5,7 @@ description: Homepage description
 hero1: Spray Foam Insulation Services
 hero2: In Tofino, Port Alberni & Ucluelet.
 
-heading1: The Highest Standard Of Insolation For Every Type Of Home.
+heading1: The Highest Standard Of Insulation For Every Type Of Home.
 
 benefit1: Energy Efficiency
 benefit1_desc: Whether you are insulating your whole home, renovating a particular room or spraying foam in a basement, all solutions have a dramatic effect on your home energy efficiency. Typical applications may see a result of 50% reduction in heating and cooling costs. 
