@@ -13,7 +13,7 @@
                     </h2>
                   
                     <div data-aos="fade" data-aos-delay="1500" data-aos-duration="800">
-                    <a href="#contact" class="button is-primary is-large my-5">Drop us a line</a>
+                    <a href="#contact" class="button is-primary">Drop us a line</a>
                   </div>
                 </div>
               </div>
@@ -25,7 +25,7 @@
 <section id="about" class="section mt-5 has-background-white has-text-dark has-text-weight-bold">
     <div class="container">
     <div class="is-flex is-column is-justified-center is-aligned-center">
-        <h2 class="is-size-3 has-text-centered has-text-weight-bold">{{ .Params.heading1 }}</h2>
+        <h2 class="is-size-2 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.heading1 }}</h2>
 
         <p class="is-size-3 mt-1">Residential & Commercial</p>
     </div>
@@ -41,7 +41,7 @@
                 <svg class="feature_icon">
                     <use xlink:href="{{ $.Site.BaseURL }}icons/light.svg#fire"></use>
                   </svg>
-                <h3 class="is-size-4 has-text-centered has-text-weight-bold">{{ .Params.benefit1 }}</h3>
+                <h3 class="is-size-4 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.benefit1 }}</h3>
                 <p class="has-text-centered has-font-size-small">{{ .Params.benefit1_desc }}</p>
             </div>
             
@@ -52,7 +52,7 @@
             <svg class="feature_icon">
                 <use xlink:href="{{ $.Site.BaseURL }}icons/light.svg#tint"></use>
               </svg>
-            <h3 class="is-size-4 has-text-centered has-text-weight-bold">{{ .Params.benefit2 }}</h3>
+            <h3 class="is-size-4 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.benefit2 }}</h3>
             <p class="has-text-centered has-font-size-small">{{ .Params.benefit2_desc }}</p>
         </div>
         </div>
@@ -62,7 +62,7 @@
             <svg class="feature_icon">
                 <use xlink:href="{{ $.Site.BaseURL }}icons/light.svg#volume-mute"></use>
               </svg>
-            <h3 class="is-size-4 has-text-centered has-text-weight-bold">{{ .Params.benefit3 }}</h3>
+            <h3 class="is-size-4 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.benefit3 }}</h3>
             <p class="has-text-centered has-font-size-small">{{ .Params.benefit3_desc }}</p>
         </div>
             </div>
@@ -72,7 +72,7 @@
 <section id="" class="section is-medium" data-aos="fade-up" data-aos-duration="800">
     
     <div class="container">
-        <h2 class="has-text-centered is-size-3 mb-5 pb-5 has-text-weight-bold">{{ .Params.heading2 }}</h2>
+        <h2 class="is-size-2 has-text-uppercase has-text-centered mb-5 pb-5 has-text-weight-bold">{{ .Params.heading2 }}</h2>
     <div class="columns">
         <div class="column is-7">
             <p class="pr-5">{{ .Params.heading2_sub | safeHTML }}</p>
@@ -82,6 +82,19 @@
         </div>
     </div>
 </div>
+</section>
+<section>
+  <div class="columns">
+    <div class="column">
+      
+    </div>
+    <div class="column">
+
+    </div>
+    <div class="column">
+
+    </div>
+  </div>
 </section>
 <section id="testimonials" class="section is-medium has-text-white testimonials gradient-background">
     <div class="container">
