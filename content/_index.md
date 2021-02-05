@@ -2,8 +2,8 @@
 title: Homepage
 description: Homepage description
 
-hero1: Spray Foam Insulation Services
-hero2: In Tofino, Port Alberni & Ucluelet. We offer professional on time reliable service for both residential and commercial properties.
+hero1: Spray foam insulation services
+hero2: in Tofino, Port Alberni & Ucluelet. We offer professional on time reliable service for both residential and commercial properties.
 
 heading1: The Highest Standard Of Insulation
 
