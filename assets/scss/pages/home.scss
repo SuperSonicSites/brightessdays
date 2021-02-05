@@ -6,7 +6,7 @@
 }
 .hero {
   background-image: url(/../img/hero.jpg);
-  background-position: bottom;
+  background-position: left;
 
   &-body {
     background-color: rgba(0, 0, 0, 0.4);
@@ -128,6 +128,15 @@
         padding: 10px 0;
     }
 
+}
+.gallery_image {
+  padding-bottom: 0px !important;
+  margin-bottom: 0px !important;
+
+  img {
+    padding-bottom: 0px !important;
+    margin-bottom: 0px !important;
+  }
 }
 .gradient-background {
   background-color: #32cd32;

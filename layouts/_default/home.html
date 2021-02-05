@@ -6,14 +6,14 @@
       <div class="container">
           <div class="columns">
               <div class="column is-flex is-column is-justified-center ">
-                <div class="is-flex is-column is-aligned-center is-justified-center">
-                    <h1 class="is-size-1 has-text-uppercase has-text-white has-text-weight-bold" data-aos="fade-right" data-aos-duration="800">Brightest Days Spray Foam Co.</h1>
-                    <h2 class="title is-size-3 my-4 has-text-white has-text-centered" data-aos="fade" data-aos-delay="500" data-aos-duration="800">
+                <div class="is-flex is-column is-justified-center">
+                    <h1 class="is-size-1 has-text-uppercase has-text-white has-text-weight-bold" data-aos="fade" data-aos-duration="800">Brightest Days Spray Foam Co.</h1>
+                    <h2 class="subtitle is-size-3 has-text-white has-text-weight-bold" data-aos="fade" data-aos-delay="500" data-aos-duration="800">
                       {{ .Params.hero1 | safeHTML }} {{ .Params.hero2 | safeHTML }}
                     </h2>
                   
-                    <div data-aos="fade" data-aos-delay="1500" data-aos-duration="800">
-                    <a href="#contact" class="button is-primary">Drop us a line</a>
+                    <div data-aos="fade" data-aos-delay="1000" data-aos-duration="800">
+                    <a href="#contact" class="button button1 is-primary is-large">Let's Talk</a>
                   </div>
                 </div>
               </div>
@@ -27,7 +27,7 @@
     <div class="is-flex is-column is-justified-center is-aligned-center">
         <h2 class="is-size-2 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.heading1 }}</h2>
 
-        <p class="is-size-3 mt-1">Residential & Commercial</p>
+        <h3 class="is-size-3 has-text-weight-bold mt-1">Residential & Commercial</h3>
     </div>
 </div>
 </section>
@@ -84,21 +84,30 @@
 </div>
 </section>
 <section>
-  <div class="columns">
-    <div class="column">
-      
-    </div>
-    <div class="column">
-
-    </div>
-    <div class="column">
-
-    </div>
+  <div class="gallery">
+    <figure class="gallery__item gallery__item--1">
+      <img src="img/1-min.jpg" class="gallery__img" alt="Image 1">
+    </figure>
+    <figure class="gallery__item gallery__item--2">
+      <img src="img/2-min.jpg" class="gallery__img" alt="Image 2">
+    </figure>
+    <figure class="gallery__item gallery__item--3">
+      <img src="img/3-min.jpg" class="gallery__img" alt="Image 3">
+    </figure>
+    <figure class="gallery__item gallery__item--4">
+      <img src="img/4-min.jpg" class="gallery__img" alt="Image 4">
+    </figure>
+    <figure class="gallery__item gallery__item--5">
+      <img src="img/5-min.jpg" class="gallery__img" alt="Image 5">
+    </figure>
+    <figure class="gallery__item gallery__item--6">
+      <img src="img/6-min.jpg" class="gallery__img" alt="Image 6">
+    </figure>
   </div>
 </section>
-<section id="testimonials" class="section is-medium has-text-white testimonials gradient-background">
+<section id="testimonials" class="section is-medium has-text-white testimonials has-background-primary">
     <div class="container">
-        <h2 class="has-text-centered is-size-1 has-text-weight-bold">Testimonials</h2>
+        <h2 class="has-text-centered is-size-2 has-text-uppercase has-text-weight-bold">Testimonials</h2>
 
         <div class="testimonials-section">
             <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
@@ -138,10 +147,10 @@
 </section>
 <section id="contact" class="section is-medium">
   <div class="container">
-    <h2 class="is-size-1 is-bold has-text-centered has-text-left-touch has-text-weight-bold">
+    <h2 class="is-size-2 has-text-weight-bold has-text-uppercase has-text-centered has-text-left-touch has-text-weight-bold">
       {{ .Params.contact_heading }}
     </h2>
-    <h3 class="has-text-centered has-text-left-touch block py-2 is-size-4">
+    <h3 class="has-text-centered has-text-left-touch has-text-weight-bold py-2 is-size-4">
       {{ .Params.contact_desc | safeHTML }}
     </h3>
   </div>
