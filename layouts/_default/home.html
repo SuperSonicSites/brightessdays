@@ -125,20 +125,26 @@
   <div class="container">
     <h2 class="has-text-centered is-size-2 has-text-uppercase has-text-weight-bold">Testimonials</h2>
 
-    <div class="columns is-5">
+    <div class="columns is-5 mt-5" data-aos="fade-up" data-aos-duration="800">
       <div class="column">
         <div class="testimonial testimonial_1">
-          
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold">John Doe</h2>
+            {{- partial "stars.html" .}}
+          <p class="block testimonial__text">{{ .Params.Testimonial1 }}</p>
         </div>
       </div>
       <div class="column">
         <div class="testimonial testimonial_2">
-          
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold">Lucy Rita</h2>
+          {{- partial "stars.html" .}}
+        <p class="block testimonial__text">{{ .Params.Testimonial2 }}</p>
         </div>
       </div>
       <div class="column">
         <div class="testimonial testimonial_3">
-          
+          <h2 class="testimonial__name is-size-4 has-text-weight-bold">Jamie Fox</h2>
+          {{- partial "stars.html" .}}
+        <p class="block testimonial__text">{{ .Params.Testimonial3 }}</p>
         </div>
       </div>
     </div>
@@ -190,7 +196,7 @@
           data-error="Please,leave us a message."></textarea>
       </div>
       <div class="is-flex is-justified-center">
-        <input type="submit" class="button is-primary is-large my-5 has-text-centered" value="{{ i18n " send" }}">
+        <input type="submit" class="button is-primary is-large my-5 has-text-centered" value="Get Your Quote Today">
       </div>
     </form>
   </div>
