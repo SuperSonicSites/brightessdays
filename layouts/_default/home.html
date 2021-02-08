@@ -1,88 +1,93 @@
 {{ define "main" }}
 <header class="hero is-large is-bold home">
 
-    <div class="hero-body">
+  <div class="hero-body">
 
-      <div class="container">
-          <div class="columns">
-              <div class="column is-flex is-column is-justified-center ">
-                <div class="is-flex is-column is-justified-center">
-                    <h1 class="is-size-1 has-text-uppercase has-text-white has-text-weight-bold" data-aos="fade" data-aos-duration="800">Brightest Days Spray Foam Co.</h1>
-                    <h2 class="subtitle is-size-4 has-text-white" data-aos="fade" data-aos-delay="500" data-aos-duration="800">
-                      {{ .Params.hero1 | safeHTML }} {{ .Params.hero2 | safeHTML }}
-                    </h2>
-                  
-                    <div data-aos="fade" data-aos-delay="1000" data-aos-duration="800">
-                    <a href="#contact" class="button button1 is-primary is-large">Get Your Quote Today</a>
-                  </div>
-                </div>
-              </div>
+    <div class="container">
+      <div class="columns">
+        <div class="column is-flex is-column is-justified-center ">
+          <div class="is-flex is-column is-justified-center">
+            <h1 class="is-size-1 has-text-uppercase has-text-white has-text-weight-bold" data-aos="fade"
+              data-aos-duration="800">Brightest Days Spray Foam Co.</h1>
+            <h2 class="subtitle is-size-4 has-text-white" data-aos="fade" data-aos-delay="500" data-aos-duration="800">
+              {{ .Params.hero1 | safeHTML }} {{ .Params.hero2 | safeHTML }}
+            </h2>
+
+            <div data-aos="fade" data-aos-delay="1000" data-aos-duration="800">
+              <a href="#contact" class="button button1 is-primary is-large">Get Your Quote Today</a>
+            </div>
+          </div>
+        </div>
       </div>
-  
+
     </div>
-  
+
 </header>
 <section id="about" class="section mt-5 has-background-white has-text-dark has-text-weight-bold">
-    <div class="container">
+  <div class="container">
     <div class="is-flex is-column is-justified-center is-aligned-center">
-        <h2 class="is-size-2 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.heading1 }}</h2>
+      <h2 class="is-size-2 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.heading1 }}</h2>
 
-        <h3 class="is-size-3 has-text-weight-bold mt-1">Residential & Commercial</h3>
+      <h3 class="is-size-3 has-text-weight-bold mt-1">Residential & Commercial</h3>
     </div>
-</div>
+  </div>
 </section>
 
 <section class="section">
-    <div class="container">
+  <div class="container">
 
     <div class="columns">
-        <div class="column">
-            <div class="box__feature is-flex is-column is-justified-center is-aligned-center" data-aos="fade-up" data-aos-duration="800">
-                <svg class="feature_icon">
-                    <use xlink:href="{{ $.Site.BaseURL }}icons/light.svg#fire"></use>
-                  </svg>
-                <h3 class="is-size-4 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.benefit1 }}</h3>
-                <p class="has-text-centered has-font-size-small">{{ .Params.benefit1_desc }}</p>
-            </div>
-            
+      <div class="column">
+        <div class="box__feature is-flex is-column is-justified-center is-aligned-center" data-aos="fade-up"
+          data-aos-duration="800">
+          <svg class="feature_icon">
+            <use xlink:href="{{ $.Site.BaseURL }}icons/light.svg#fire"></use>
+          </svg>
+          <h3 class="is-size-4 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.benefit1 }}</h3>
+          <p class="has-text-centered has-font-size-small">{{ .Params.benefit1_desc }}</p>
         </div>
 
-        <div class="column">
-            <div class="box__feature is-flex is-column is-justified-center is-aligned-center" data-aos="fade-up" data-aos-duration="800">
-            <svg class="feature_icon">
-                <use xlink:href="{{ $.Site.BaseURL }}icons/light.svg#tint"></use>
-              </svg>
-            <h3 class="is-size-4 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.benefit2 }}</h3>
-            <p class="has-text-centered has-font-size-small">{{ .Params.benefit2_desc }}</p>
-        </div>
-        </div>
+      </div>
 
-        <div class="column">
-            <div class="box__feature is-flex is-column is-justified-center is-aligned-center" data-aos="fade-up" data-aos-duration="800">
-            <svg class="feature_icon">
-                <use xlink:href="{{ $.Site.BaseURL }}icons/light.svg#volume-mute"></use>
-              </svg>
-            <h3 class="is-size-4 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.benefit3 }}</h3>
-            <p class="has-text-centered has-font-size-small">{{ .Params.benefit3_desc }}</p>
+      <div class="column">
+        <div class="box__feature is-flex is-column is-justified-center is-aligned-center" data-aos="fade-up"
+          data-aos-duration="800">
+          <svg class="feature_icon">
+            <use xlink:href="{{ $.Site.BaseURL }}icons/light.svg#tint"></use>
+          </svg>
+          <h3 class="is-size-4 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.benefit2 }}</h3>
+          <p class="has-text-centered has-font-size-small">{{ .Params.benefit2_desc }}</p>
         </div>
-            </div>
+      </div>
+
+      <div class="column">
+        <div class="box__feature is-flex is-column is-justified-center is-aligned-center" data-aos="fade-up"
+          data-aos-duration="800">
+          <svg class="feature_icon">
+            <use xlink:href="{{ $.Site.BaseURL }}icons/light.svg#volume-mute"></use>
+          </svg>
+          <h3 class="is-size-4 has-text-uppercase has-text-centered has-text-weight-bold">{{ .Params.benefit3 }}</h3>
+          <p class="has-text-centered has-font-size-small">{{ .Params.benefit3_desc }}</p>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 </section>
 
 <section id="" class="section is-medium" data-aos="fade-up" data-aos-duration="800">
-    
-    <div class="container">
-        <h2 class="is-size-2 has-text-uppercase has-text-centered mb-5 pb-5 has-text-weight-bold">{{ .Params.heading2 }}</h2>
+
+  <div class="container">
+    <h2 class="is-size-2 has-text-uppercase has-text-centered mb-5 pb-5 has-text-weight-bold">{{ .Params.heading2 }}
+    </h2>
     <div class="columns">
-        <div class="column is-7">
-            <p class="pr-5">{{ .Params.heading2_sub | safeHTML }}</p>
-        </div>
-        <div class="column is-5">
-            <img src="{{ $.Site.BaseURL }}img/about.jpg" class="has-shadow" alt="">
-        </div>
+      <div class="column is-7">
+        <p class="pr-5">{{ .Params.heading2_sub | safeHTML }}</p>
+      </div>
+      <div class="column is-5">
+        <img src="{{ $.Site.BaseURL }}img/about.jpg" class="has-shadow" alt="">
+      </div>
     </div>
-</div>
+  </div>
 </section>
 <section>
   <div class="gallery" id="photo">
@@ -106,58 +111,43 @@
     </figure>
   </div>
 </section>
-  <div class="container">
-    <section id="video" class="section is-medium" data-aos="fade-up" data-aos-duration="800">
-        <h2 class="is-size-2 has-text-uppercase has-text-centered mb-5 pb-5 has-text-weight-bold">Why Spray Foam Insulation</h2>
-        <iframe width="100%"  height="680px" src="https://www.youtube.com/embed/FE44fzcOOag" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </section>
-  </div>
+<div class="container">
+  <section id="video" class="section is-medium" data-aos="fade-up" data-aos-duration="800">
+    <h2 class="is-size-2 has-text-uppercase has-text-centered mb-5 pb-5 has-text-weight-bold">Why Spray Foam Insulation
+    </h2>
+    <iframe width="100%" height="680px" src="https://www.youtube.com/embed/FE44fzcOOag" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </section>
+</div>
 
 <section id="testimonials" class="section is-medium has-text-white testimonials has-background-primary">
-    <div class="container">
-        <h2 class="has-text-centered is-size-2 has-text-uppercase has-text-weight-bold">Testimonials</h2>
-        
-        <div class="testimonials-section">
-            
-            <input type="radio" name="slider" title="slide1" checked="checked" class="slider__nav"/>
-            <input type="radio" name="slider" title="slide2" class="slider__nav"/>
-            <input type="radio" name="slider" title="slide3" class="slider__nav"/>
-            <input type="radio" name="slider" title="slide4" class="slider__nav"/>
-            <input type="radio" name="slider" title="slide5" class="slider__nav"/>
-            
-          <div class="slider__inner">
-            <div class="slider__contents">
-              <quote>&rdquo;</quote>
-              <p class="slider__txt">We love you guys. It's easy to order, we get shipments quick and my rep solves tough problems the right way. We get answers that work.</p>
-              <h2 class="slider__caption">Rhonda | NylonCraft</h2>
-            </div>
-            <div class="slider__contents">
-              <quote>&rdquo;</quote>
-              <p class="slider__txt">You all bend over backwards to get it done. Inside sales and the Account Managers are great! It's your service...you all know that it's not just about taking orders it's about service. Why do we choose you guys - your people, your prices, you're quick and you have a ton of technical knowledge.</p>
-              <h2 class="slider__caption">Jared | Rexam</h2>
-            </div>
-            <div class="slider__contents">
-              <quote>&rdquo;</quote>
-              <p class="slider__txt">It's the long-term relationship we have with Proheat that keeps me calling you guys. I trust you, you're quick, and everybody I've ever spoken to there are all great people. Our CEO, Bill, talks about building relationships. That's exactly what Proheat does, and I couldn't be happier.</p>
-              <h2 class="slider__caption">Chris | C&M Fine Pack</h2>
-            </div>
-            <div class="slider__contents">
-              <quote>&rdquo;</quote>
-              <p class="slider__txt">You answer my questions, always takes care of problems, and I never have a hassle.</p>
-              <h2 class="slider__caption">Rex | LNP Engineering Plastics</h2>
-            </div>
-            <div class="slider__contents">
-              <quote>&rdquo;</quote>
-              <p class="slider__txt">Proheat's staff are all so friendly and everybody goes above and beyond. Everyone is courteous, everything is quick and you get us what we need. I have to shop around for everything and we ALWAYS come back to Proheat.</p>
-              <h2 class="slider__caption">Darlene | Russel Stover</h2>
-            </div>
-          </div>
+  <div class="container">
+    <h2 class="has-text-centered is-size-2 has-text-uppercase has-text-weight-bold">Testimonials</h2>
+
+    <div class="columns is-5">
+      <div class="column">
+        <div class="testimonial testimonial_1">
+          
         </div>
+      </div>
+      <div class="column">
+        <div class="testimonial testimonial_2">
+          
+        </div>
+      </div>
+      <div class="column">
+        <div class="testimonial testimonial_3">
+          
+        </div>
+      </div>
     </div>
+  </div>
 </section>
 <section id="contact" class="section is-medium">
   <div class="container">
-    <h2 class="is-size-2 has-text-weight-bold has-text-uppercase has-text-centered has-text-left-touch has-text-weight-bold">
+    <h2
+      class="is-size-2 has-text-weight-bold has-text-uppercase has-text-centered has-text-left-touch has-text-weight-bold">
       {{ .Params.contact_heading }}
     </h2>
     <h3 class="has-text-centered has-text-left-touch has-text-weight-bold py-2 is-size-4">
@@ -165,27 +155,14 @@
     </h3>
   </div>
   <div class="column is-half is-offset-one-quarter shadow box_form mt-5">
-    <form
-      id="contact-form"
-      method="POST"
-      action="{{ .Site.Params.usebasin }}"
-      class="has-shadow form has-background-light p-5"
-      role="form"
-    >
+    <form id="contact-form" method="POST" action="{{ .Site.Params.usebasin }}"
+      class="has-shadow form has-background-light p-5" role="form">
       <div class="field">
         <label class="label">{{ i18n "firstname" }} *</label>
 
         <div class="control">
-          <input
-            id="form_name"
-            class="input"
-            placeholder="e.g Alex Smith"
-            type="text"
-            name="name"
-            class="form-control"
-            required="required"
-            data-error="Firstname is required."
-          />
+          <input id="form_name" class="input" placeholder="e.g Alex Smith" type="text" name="name" class="form-control"
+            required="required" data-error="Firstname is required." />
         </div>
       </div>
 
@@ -193,12 +170,8 @@
         <label class="label">{{ i18n "email" }} *</label>
 
         <div class="control">
-          <input
-            class="input"
-            type="email"
-            placeholder="e.g. alexsmith@gmail.com"
-            data-error="Valid email is required."
-          />
+          <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com"
+            data-error="Valid email is required." />
         </div>
       </div>
 
@@ -213,21 +186,13 @@
       <div class="field">
         <label for="form_message"><strong>Message *</strong></label>
 
-        <textarea
-          id="form_message"
-          name="message"
-          class="textarea"
-          rows="4"
-          required
-          data-error="Please,leave us a message."
-        ></textarea>
+        <textarea id="form_message" name="message" class="textarea" rows="4" required
+          data-error="Please,leave us a message."></textarea>
       </div>
       <div class="is-flex is-justified-center">
-        <input type="submit" class="button is-primary is-large my-5 has-text-centered"
-        value="{{ i18n "send" }}">
+        <input type="submit" class="button is-primary is-large my-5 has-text-centered" value="{{ i18n " send" }}">
       </div>
     </form>
   </div>
 </section>
 {{ end }}
-
