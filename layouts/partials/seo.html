@@ -17,7 +17,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ .Title}} ~ {{ .Site.Title }}">
 <meta property="og:description" content="{{ .Params.description }}">
-<meta property="og:image" content="{{ .Site.Params.schema.og }}">
+<meta property="og:image" content="{{ $.Site.BaseURL }}{{ .Site.Params.schema.og }}">
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
@@ -25,13 +25,13 @@
 <meta property="twitter:url" content="{{ .Permalink }}">
 <meta name="twitter:title" content="{{ .Title}} ~ {{ .Site.Title }}">
 <meta name="twitter:description" content="{{ .Params.description }}">
-<meta name="twitter:image" content="{{ .Site.Params.schema.og }}">
+<meta name="twitter:image" content="{{ $.Site.BaseURL }}{{ .Site.Params.schema.og }}">
 
 <!-- Favicon Setup -->
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ $.Site.BaseURL }}apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="{{ $.Site.BaseURL }}apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ $.Site.BaseURL }}favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ $.Site.BaseURL }}favicon-16x16.png">
 <link rel="manifest" href="/site.webmanifest">
 
 <!-- Schema Markup -->
@@ -40,7 +40,7 @@
     "@context" : "http://schema.org",
     "@type" : "{{ $.Site.Params.schema.type }}",
     "telephone":"{{ $.Site.Params.schema.phone }}",
-    "image": "{{ $.Site.Params.schema.og }}",
+    "image": "{{ $.Site.BaseURL }}{{ $.Site.Params.schema.og }}",
     "address" : {
         "@type": "PostalAddress",
         "addressLocality": "{{ $.Site.Params.schema.city }}",
