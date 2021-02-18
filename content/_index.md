@@ -1,5 +1,5 @@
 ---
-title: BrightestDays - Spray Foam Insulation Services in Tofino, Ucluelet & Port Alberni
+title: Spray Foam Insulation Services in Tofino, Ucluelet & Port Alberni
 description: We offer spray foam insulation service for Tofino, Ucluelet & Port Alberni. We provide professional on time reliable service for both residential and commercial properties. Get a free quote today! 
 
 hero1: 
