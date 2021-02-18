@@ -8,7 +8,7 @@
         <div class="column is-flex is-column is-justified-center ">
           <div class="is-flex is-column is-justified-center">
             <div class="homelogo">
-            <img src="img/logo.png" alt="Brightest Days Spray Foam Co. Logo">
+            <img src="img/logo.png" class="lazyload" alt="Brightest Days Spray Foam Co. Logo">
           </div>
             <h1 class="is-size-1 has-text-uppercase has-text-white has-text-weight-bold heroh1" data-aos="fade"
               data-aos-duration="800">Brightest Days Spray Foam Co.</h1>
@@ -87,7 +87,7 @@
         <p class="pr-5 has-text-centered-touch">{{ .Params.heading2_sub | safeHTML }}</p>
       </div>
       <div class="column is-5">
-        <img src="{{ $.Site.BaseURL }}img/about.jpg" class="has-shadow" alt="">
+        <img src="{{ $.Site.BaseURL }}img/about.jpg" class="lazyload has-shadow" alt="">
       </div>
     </div>
   </div>
@@ -95,22 +95,22 @@
 <section>
   <div class="gallery" id="photo">
     <figure class="gallery__item gallery__item--1">
-      <img src="img/1-min.jpg" class="gallery__img" alt="Image 1">
+      <img src="img/1-min.jpg" class="gallery__img lazyload" alt="Image 1">
     </figure>
     <figure class="gallery__item gallery__item--2">
-      <img src="img/2-min.jpg" class="gallery__img" alt="Image 2">
+      <img src="img/2-min.jpg" class="gallery__img lazyload" alt="Image 2">
     </figure>
     <figure class="gallery__item gallery__item--3">
-      <img src="img/3-min.jpg" class="gallery__img" alt="Image 3">
+      <img src="img/3-min.jpg" class="gallery__img lazyload" alt="Image 3">
     </figure>
     <figure class="gallery__item gallery__item--4">
-      <img src="img/4-min.jpg" class="gallery__img" alt="Image 4">
+      <img src="img/4-min.jpg" class="gallery__img lazyload" alt="Image 4">
     </figure>
     <figure class="gallery__item gallery__item--5">
-      <img src="img/5-min.jpg" class="gallery__img" alt="Image 5">
+      <img src="img/5-min.jpg" class="gallery__img lazyload" alt="Image 5">
     </figure>
     <figure class="gallery__item gallery__item--6">
-      <img src="img/6-min.jpg" class="gallery__img" alt="Image 6">
+      <img src="img/6-min.jpg" class="gallery__img lazyload" alt="Image 6">
     </figure>
   </div>
 </section>
@@ -118,9 +118,11 @@
   <section id="video" class="section is-medium" data-aos="fade-up" data-aos-duration="800">
     <h2 class="is-size-2 has-text-uppercase has-text-centered mb-5 pb-5 has-text-weight-bold">Why Spray Foam Insulation
     </h2>
+    <div class="video lazyload">
     <iframe width="100%" height="680px" src="https://www.youtube.com/embed/FE44fzcOOag" frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowfullscreen></iframe>
+    </div>
   </section>
 </div>
 
