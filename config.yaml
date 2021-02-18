@@ -45,6 +45,7 @@ params:
         logo: "img/logo.png"
         logofooter: "img/logo.png"
         image: "img/og.jpg"
+        og: "img/og.jpg"
         address: 1356 Pine Rd.
         address2: ''
         city: Ucluelet
