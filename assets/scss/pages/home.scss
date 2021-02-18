@@ -60,3 +60,24 @@
     margin-top: 20px;
   }
 }
+#testimonials {
+  display: none;
+}
+.homelogo {
+  display:none;
+}
+@media only screen and (max-width: 968px)  {
+  .hero {
+    background-position: left;
+
+    h1 {
+      display: none;
+    }
+  }
+  .homelogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+  }
+}

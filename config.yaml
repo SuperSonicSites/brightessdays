@@ -17,12 +17,9 @@ menu:
         - name: Video
           url: '#video'
           weight: 4
-        - name: Testimonials
-          url: '#testimonials'
-          weight: 5
         - name: Contact
           url: '#contact'
-          weight: 6
+          weight: 5
 
 params:
     name: 'Brightest Days Spray Foam Co.'

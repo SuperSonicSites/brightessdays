@@ -3,7 +3,12 @@
     flex-direction: row;
     justify-content: center;
     max-height: 7.5rem;
-    min-height: 2.5rem;
+    min-height: 2.5rem; 
+
+    .navbar-item img {
+      max-height: 8rem;
+      margin-top: 50px;
+    }
 
   }
   .navbar-item {
@@ -23,13 +28,11 @@ a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover, a.navbar-i
  color: white;
  background-color: $primary;
   }
-  .navbar-item img {
-    max-height: 4rem;
-  }
+
   
   /* MENU STYLES */
-  .mobile .navbar-brand {
-    width: 165px;
+  .mobile {
+    display: none;
   }
   .menu-wrap {
     position: fixed;

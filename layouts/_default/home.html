@@ -1,5 +1,5 @@
 {{ define "main" }}
-<header class="hero is-large is-bold home">
+<header class="hero is-fullheight is-bold home">
 
   <div class="hero-body">
 
@@ -7,7 +7,10 @@
       <div class="columns">
         <div class="column is-flex is-column is-justified-center ">
           <div class="is-flex is-column is-justified-center">
-            <h1 class="is-size-1 has-text-uppercase has-text-white has-text-weight-bold" data-aos="fade"
+            <div class="homelogo">
+            <img src="img/logo.png" alt="Brightest Days Spray Foam Co. Logo">
+          </div>
+            <h1 class="is-size-1 has-text-uppercase has-text-white has-text-weight-bold heroh1" data-aos="fade"
               data-aos-duration="800">Brightest Days Spray Foam Co.</h1>
             <h2 class="subtitle is-size-4 has-text-white" data-aos="fade" data-aos-delay="500" data-aos-duration="800">
               {{ .Params.hero1 | safeHTML }} {{ .Params.hero2 | safeHTML }}
@@ -81,7 +84,7 @@
     </h2>
     <div class="columns">
       <div class="column is-7">
-        <p class="pr-5">{{ .Params.heading2_sub | safeHTML }}</p>
+        <p class="pr-5 has-text-centered-touch">{{ .Params.heading2_sub | safeHTML }}</p>
       </div>
       <div class="column is-5">
         <img src="{{ $.Site.BaseURL }}img/about.jpg" class="has-shadow" alt="">
@@ -153,10 +156,10 @@
 <section id="contact" class="section is-medium">
   <div class="container">
     <h2
-      class="is-size-2 has-text-weight-bold has-text-uppercase has-text-centered has-text-left-touch has-text-weight-bold">
+      class="is-size-2 has-text-weight-bold has-text-uppercase has-text-centered has-text-weight-bold">
       {{ .Params.contact_heading }}
     </h2>
-    <h3 class="has-text-centered has-text-left-touch has-text-weight-bold py-2 is-size-4">
+    <h3 class="has-text-centered has-text-weight-bold py-2 is-size-4">
       {{ .Params.contact_desc | safeHTML }}
     </h3>
   </div>
