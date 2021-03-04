@@ -169,7 +169,7 @@
     <form id="contact-form" method="POST" action="{{ .Site.Params.usebasin }}"
       class="has-shadow form has-background-light p-5" role="form">
       <div class="field">
-        <label class="label">{{ i18n "firstname" }} *</label>
+        <label for="form_name" class="label">{{ i18n "firstname" }} *</label>
 
         <div class="control">
           <input id="form_name" class="input" placeholder="e.g Alex Smith" type="text" name="name" class="form-control"
@@ -178,19 +178,19 @@
       </div>
 
       <div class="field">
-        <label class="label">{{ i18n "email" }} *</label>
+        <label class="label" for="email">{{ i18n "email" }} *</label>
 
         <div class="control">
-          <input class="input" type="email" placeholder="e.g. alexsmith@gmail.com"
+          <input id="email" name="email" class="input" type="email" placeholder="e.g. alexsmith@gmail.com" required="required"
             data-error="Valid email is required." />
         </div>
       </div>
 
       <div class="field">
-        <label class="label">{{ i18n "phone" }}</label>
+        <label class="label" for="phone">{{ i18n "phone" }}</label>
 
         <div class="control">
-          <input class="input" type="tel" placeholder="e.g. +1-234-567-7890" />
+          <input id="phone" name="phone" class="input" type="tel" placeholder="e.g. +1-234-567-7890" />
         </div>
       </div>
 
